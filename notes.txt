@@ -1,0 +1,4 @@
+1-- react app
+2-- firebase / console - create project 
+3-- using firebase auth, 
+4-- 
