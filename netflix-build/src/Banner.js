@@ -1,11 +1,28 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import './Banner.css'
+import requests from './Request';
 
 function Banner() {
 
+  const [movie,setMovie]=useState([]);
+
+  useEffect(()=>{
+    async function fetchData(){
+      const request=await axios.get(requests.fetchNetflixOriginals);
+      setMovie(
+        request.data.results[
+          Math.floor(Math.random()*request.data.results.length-1)
+        ]
+      );
+      return request;
+    }
+    
+    fetchData();
+    },[]);
+
   //elipsis is used to shorten the description
   //here we using elipsis func
-
+  
   function truncate(str, n) {
     return str?.length > n ? str.substr(0, n - 1) + "..." : str;
   }
