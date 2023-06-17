@@ -16,6 +16,7 @@
 
 .nav__black{
   background-color: #111;
+  height: 50px;
 }
 
 .nav__contents {
@@ -25,15 +26,16 @@
 
 .nav__logo {
   position: fixed;
-  top: 10px;
+  top: -10px;
   left: 0;
-  width: 100px;
+  width: 120px;
   object-fit: contain;
   margin-left: 20px;
   cursor: pointer;
 }
 
 .nav__avatar {
+  top: 10px;
   cursor: pointer;
   position: fixed;
   right: 20px;

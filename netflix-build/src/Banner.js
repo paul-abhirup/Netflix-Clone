@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React,{ useState, useEffect} from 'react'
 import './Banner.css'
 import requests from './Request';
 import axios from './axios';
@@ -10,6 +10,7 @@ function Banner() {
   useEffect(()=>{
     async function fetchData(){
       const request = await axios.get(requests.fetchNetflixOriginals);
+      //  axios.get(requests.fetchNetflixOriginals);
       setMovie(
         request.data.results[
           Math.floor(Math.random()*request.data.results.length-1)
@@ -33,18 +34,20 @@ function Banner() {
       className="banner"
       style={{
         backgroundSize: "cover",
-        backgroundImage: `url(https://images.unsplash.com/photo-1603366615917-1fa6dad5c4fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8OXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80)`,
+        backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
         backgroundPosition: "center center",
       }}
     >
       <div className="banner__contents">
-        <h1 className="banner__title">Movie Name</h1>
+        <h1 className="banner__title">
+          {movie?.title || movie?.name || movie?.original_name}
+        </h1>
         <div className="banner__buttons">
           <button className="banner__button">Play</button>
           <button className="banner__button">My List</button>
         </div>
         <h1 className="banner__description">
-          {truncate(`Movie Description lorem34   Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quae similique neque, placeat accusamus sapiente. Beatae, ab a? Illo minus non molestias quod similique saepe culpa sunt odio sit veritatis?`,200)} </h1>
+          {truncate(movie.overview, 170)} </h1>
       </div>
       <div className="banner--fadeBottom"></div>
     </header>

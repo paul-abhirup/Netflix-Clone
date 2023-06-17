@@ -24,6 +24,15 @@ const requests = {
   // fetchAnimationMovies: `/discover/movie?api_key=${API_KEY}&with_genres=16&language=en-US`,
   fetchAdventureMovies: `/discover/movie?api_key=${API_KEY}&with_genres=12`,
   // fetchAdventureMovies: `/discover/movie?api_key=${API_KEY}&with_genres=12&language=en-US`,
+  fetchSciFiMovies: `/discover/movie?api_key=${API_KEY}&with_genres=878`,
+  // fetchSciFiMovies: `/discover/movie?api_key=${API_KEY}&with_genres=878&language=en-US`,
+  fetchWarMovies: `/discover/movie?api_key=${API_KEY}&with_genres=10752`,
+  // fetchWarMovies: `/discover/movie?api_key=${API_KEY}&with_genres=10752&language=en-US`,
+  fetchCrimeMovies: `/discover/movie?api_key=${API_KEY}&with_genres=80`,
+  // fetchCrimeMovies: `/discover/movie?api_key=${API_KEY}&with_genres=80&language=en-US`,
+  fetchMysteryMovies: `/discover/movie?api_key=${API_KEY}&with_genres=9648`,
+  // fetchMysteryMovies: `/discover/movie?api_key=${API_KEY}&with_genres=9648&language=en-US`,
+  
 
 };
 
