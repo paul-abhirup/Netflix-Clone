@@ -1,9 +1,9 @@
 import React from "react";
 import "./HomeScreen.css";
-import Nav from "./Nav";
-import Banner from "./Banner";
-import requests from "./Request";
-import Row from "./Row";
+import Nav from "../Nav";
+import Banner from "../Banner";
+import requests from "../Request";
+import Row from "../Row";
 
 function homeScreen() {
   return (
@@ -20,16 +20,8 @@ function homeScreen() {
         fetchUrl={requests.fetchNetflixOriginals}
         isLargeRow
       />
-      <Row 
-      title="Trending Now" 
-      fetchUrl={requests.fetchTrending} 
-      isLargeRow 
-      />
-      <Row 
-      title="Top Rated" 
-      fetchUrl={requests.fetchTopRated} 
-      isLargeRow 
-      />
+      <Row title="Trending Now" fetchUrl={requests.fetchTrending} isLargeRow />
+      <Row title="Top Rated" fetchUrl={requests.fetchTopRated} isLargeRow />
       <Row
         title="Action Movies"
         fetchUrl={requests.fetchActionMovies}
@@ -40,16 +32,16 @@ function homeScreen() {
         fetchUrl={requests.fetchComedyMovies}
         isLargeRow
       />
-       <Row
+      <Row
         title="Horror Movies"
         fetchUrl={requests.fetchHorrorMovies}
         isLargeRow
-        />
+      />
       <Row
         title="Romance Movies"
         fetchUrl={requests.fetchRomanceMovies}
         isLargeRow
-        />
+      />
       {/*
       <Row
         title="Documentaries"
