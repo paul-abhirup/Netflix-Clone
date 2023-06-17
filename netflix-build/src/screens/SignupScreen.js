@@ -43,4 +43,4 @@ function SignupScreen() {
   );
 }
 
-export default SignupScreen
+export default SignupScreen;
