@@ -18,7 +18,6 @@ function Banner() {
       );
       return request;
     }
-    
     fetchData();
     },[]);
 

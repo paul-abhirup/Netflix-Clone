@@ -1,6 +1,6 @@
 .banner{
   position: relative;
-  height: 600px;
+  height: 895px;
   color: antiquewhite;
   object-fit: contain;
 
@@ -64,5 +64,6 @@
   color: #000;
   background-color: #e6e6e6;
   transition: all 0.2s;
+  cursor: pointer;
 }
 

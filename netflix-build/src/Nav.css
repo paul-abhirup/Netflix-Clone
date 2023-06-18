@@ -17,7 +17,7 @@
 
 .nav__black{
   background-color: #111;
-  height: 50px;
+  height: 90px;
 }
 
 .nav__contents {
@@ -29,19 +29,19 @@
   position: fixed;
   top: -10px;
   left: 0;
-  width: 120px;
+  width: 200px;
   object-fit: contain;
-  margin-left: 20px;
+  margin-left: 30px;
   cursor: pointer;
 }
 
 .nav__avatar {
-  top: 10px;
+  top: 25px;
   cursor: pointer;
   position: fixed;
-  right: 20px;
-  width: 30px;
-  height: 30px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
 }
 
 
