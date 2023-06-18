@@ -1,6 +1,6 @@
 # Full Stack Netflix Web App
 Demo: https://netflix-clone-99fa3.web.app
-What makes this clone exceptional than all tutorial
+<p>What makes this clone exceptional than all tutorial</p>
 
 ### Features
 
