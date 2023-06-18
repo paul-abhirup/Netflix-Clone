@@ -45,10 +45,30 @@
   font-weight: 600;
 }
 
-signupScreen__link:hover{
-
+.signupScreen__link:hover{
   text-decoration: underline;
   cursor: pointer;
-
 }
+
+.signupScreen__grey{
+  color:grey;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

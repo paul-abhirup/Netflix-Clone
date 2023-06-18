@@ -37,7 +37,7 @@ function LoginScreen() {
                   onClick={() => setSignIn(true)}
                   className="loginScreen__getStarted"
                 >
-                  GET STARTED 
+                  GET STARTED
                 </button>
               </form>
             </div>
