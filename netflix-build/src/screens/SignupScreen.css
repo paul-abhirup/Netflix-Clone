@@ -45,9 +45,23 @@
   font-weight: 600;
 }
 
-.signupScreen__link:hover{
+.signupScreen__link{
   text-decoration: underline;
-  cursor: pointer;
+  color: #fff;
+   text-decoration: underline;
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: 800;
+}
+
+
+.signupScreen__link:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: px;
+    text-decoration: underline;
+    font-weight: 900;
+    text-align: center;
 }
 
 .signupScreen__grey{

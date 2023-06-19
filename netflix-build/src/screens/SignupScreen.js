@@ -48,9 +48,11 @@ function SignupScreen() {
           Sign In
         </button>
         <h4>
-          <span className="signupScreen__gray">New to Netflix? </span>
-          <span onClick={register} className="signupScreen__signupLink">
-            Sign Up now.
+          <span className="signupScreen__gray">
+            <p>New to Netflix? Fill this boxes and</p>
+          </span>
+          <span onClick={register} className="signupScreen__link">
+            Sign Up now!!!
           </span>
         </h4>
       </form>
