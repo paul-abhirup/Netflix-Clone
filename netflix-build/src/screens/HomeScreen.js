@@ -20,6 +20,7 @@ function homeScreen() {
         fetchUrl={requests.fetchNetflixOriginals}
         isLargeRow
       />
+      {/* isLargeRow */}
       <Row title="Trending Now" fetchUrl={requests.fetchTrending} isLargeRow />
       <Row title="Top Rated" fetchUrl={requests.fetchTopRated} isLargeRow />
       <Row
